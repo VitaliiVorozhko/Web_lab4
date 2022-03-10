@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>4лаб</title>
+        <meta name="description" content="лаба">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    
+    <body>
+        <p>  <span id="countdowntimer">0 </span> </p>
+
+        <input type ="button" id = "myButton" onclick="button()" value="нажми на кнопку"/>
+        <script>
+            function button(){
+    var time = 0;
+    var downloadTimer = setInterval(function(){
+    time++;
+    document.getElementById("countdowntimer").textContent = time;
+    
+    
+    
+    },1000);
+  }
+        </script>
+        
+    </body>
+</html>
